@@ -1,0 +1,7 @@
+{
+  "name": "MUST 食堂指南",
+  "description": "一个结构化的、可搜索的食堂档口和菜品知识库，包含多维度的评分系统。",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
