@@ -2,7 +2,7 @@
 import { UserProfile } from '../types';
 import { db } from '../db';
 
-const API_URL = process.env.VITE_API_URL || 'http://localhost:8080/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
 const SESSION_KEY = 'must_canteen_session';
 const TOKEN_KEY = 'auth_token';
 

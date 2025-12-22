@@ -1,20 +1,27 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# MUST-Canteen-Compass-2
 
-# Run and deploy your AI Studio app
+一个基于React的食堂指南应用，帮助MUST学生发现和评价校园食堂美食。
 
-This contains everything you need to run your app locally.
+## 功能特性
 
-View your app in AI Studio: https://ai.studio/apps/drive/1T5LzUkD6v6bKNgXky7p_plHftWo2J8Q8
+- 浏览食堂和菜品信息
+- 用户评价和评分系统
+- 离线数据存储
+- 响应式设计
 
-## Run Locally
+## 本地运行
 
-**Prerequisites:**  Node.js
+**前提条件：** Node.js
 
-
-1. Install dependencies:
+1. 安装依赖：
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+
+2. 启动开发服务器：
    `npm run dev`
+
+3. 构建生产版本：
+   `npm run build`
+
+## 部署
+
+项目已配置为在Vercel上自动部署。

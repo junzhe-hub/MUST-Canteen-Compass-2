@@ -3,7 +3,7 @@ import { Review, Restaurant, Dish } from '../types';
 import { RESTAURANTS } from '../constants'; // Fallback mock data
 
 // Configuration
-const API_URL = process.env.VITE_API_URL || 'http://localhost:8080/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
 const CACHE_PREFIX = 'must_api_cache_';
 const CACHE_TTL = 5 * 60 * 1000; // 5 minutes cache validity
 
@@ -210,8 +210,6 @@ export const api = {
         id: `r_temp_${Date.now()}`,
         date: new Date().toISOString().split('T')[0],
         likes: 0,
-        userId: 'temp',
-        userName: 'Me',
         ...reviewData
     };
 
